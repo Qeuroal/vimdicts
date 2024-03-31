@@ -6,7 +6,7 @@
 " 设置激活的词典匹配关系
 let g:vd_dict_match = get(g:, 'dict_match', {})
 
-let s:dict_path = expand(fnamemodify(expand('<sfile>'), ':p:h:h') . '/dict')
+let s:dict_path = expand(fnamemodify(expand('<sfile>'), ':p:h:h') . '/dicts')
 
 " 添加自动补全字典
 au FileType cpp exec 'setlocal dict+=' . fnameescape(s:dict_path) . '/cpp_keywords.dict'
