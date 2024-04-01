@@ -3,6 +3,13 @@
 "
 "================================================
 
+" {{{> 判断是否已经加载过
+if exists("s:did_load_vimdicts")
+    finish
+endif
+let s:did_load_vimdicts = 1
+"<}}}
+
 " 设置激活的词典匹配关系
 let g:vd_dict_match = get(g:, 'dict_match', {})
 
